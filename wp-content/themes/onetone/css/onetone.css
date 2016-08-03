@@ -300,3 +300,10 @@ li.info-email:before {
 li.info-website:before {
     content: "\f109";
 }
+.homepage section{
+	position:relative;
+	}
+	
+#optionsframework-wrap .group .section h4 {
+    text-align: left;
+}

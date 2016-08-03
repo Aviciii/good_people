@@ -169,25 +169,6 @@ function onetone_native_pagenavi($echo,$wp_query){
 <?php
         }
 		
- add_action( 'wp_head', 'onetone_favicon' );
-
-	function onetone_favicon()
-	{
-	    $url =  onetone_option('favicon');
-	
-		$icon_link = "";
-		if($url)
-		{
-			$type = "image/x-icon";
-			if(strpos($url,'.png' )) $type = "image/png";
-			if(strpos($url,'.gif' )) $type = "image/gif";
-		
-			$icon_link = '<link rel="icon" href="'.esc_url($url).'" type="'.$type.'">';
-		}
-		
-		echo $icon_link;
-	}
-	
 	
 	function onetone_get_default_slider(){
 	

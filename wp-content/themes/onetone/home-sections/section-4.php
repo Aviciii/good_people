@@ -62,7 +62,7 @@ global $onetone_animated;
 	     $target =  esc_attr(onetone_option("section_target_".$i."_".$c));
 		 $animationtype = array('fadeInLeft','fadeInDown','fadeInRight','fadeInLeft','fadeInUp','fadeInRight','fadeInDown','fadeInDown');
 		 if( $link == "" )
-	     $img_wrap = '<img src="'.$image.'" alt="" class="feature-img ">';
+	     $img_wrap = '<a href="'.$image.'" rel="portfolio-image"><img src="'.$image.'" alt="" class="feature-img "></a>';
 	     else
 	     $img_wrap = '<a href="'.$link.'" target="'.$target.'"><img src="'.$image.'" alt="" class="feature-img "><div class="img-overlay dark">
 																			<div class="img-overlay-container">
